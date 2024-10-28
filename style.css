@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#titlebox {
+    position: absolute;
+    top: 0;
+    background-color: rgb(255, 255, 255);
+    left: 0;
+    width: 100%;
+    height: 9vh;
+    box-shadow: -1px 0 20px black;
+}
+
+#box0 {
+    position: absolute;
+    width: 60vw;
+    height: 80vh;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 10%;
+    background-color: black;
+    border: 1px solid;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+#box1, #box2, #box3, #box4, #box5, #box6 {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid;
+    border-radius: 10px;
+    width: 15vw;
+    height: 18vh;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s;
+}
+
+#box1 { border-color: black; top: 15%; left: 3%; background-color: black; }
+#box2 { border-color: green; top: 40%; left: 3%; background-color: green; }
+#box3 { border-color: yellow; top: 65%; left: 3%; background-color: yellow; }
+#box4 { top: 15%; right: 3%; background-color: white; border: 2px solid rgb(255, 255, 255); }
+#box5 { border-color: blue; top: 40%; right: 3%; background-color: blue; }
+#box6 { border-color: red; top: 65%; right: 3%; background-color: red; }
+
+#box7 {
+    position: absolute;
+    bottom: 0;
+    background-color: rgb(255, 255, 255);
+    left: 0;
+    width: 100%;
+    height: 9vh;
+    box-shadow: 0 -1px 20px black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.social {
+    padding: 1.5%;
+    font-size: 20px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #007BFF;
+}
+
+.Title {
+    position: absolute;
+    padding: 1.3%;
+    font-size: 24px;
+}
+
+.options {
+    position: absolute;
+    right: 10px;
+    padding: 1.3%;
+    font-size: 20px;
+}
+
+.options a {
+    text-decoration: none;
+    color: black;
+    margin-left: 15px;
+}
+
+.options a:hover {
+    color: #007BFF;
+}
+
+.text1 {
+    position: absolute;
+    top: 113%;
+    color: black;
+    font-size: 18px;
+}
+
+#box1:hover,
+#box2:hover,
+#box3:hover,
+#box4:hover,
+#box5:hover,
+#box6:hover {
+    backdrop-filter: blur(5px);
+    border: 0;
+}
+
+.fullscreen {
+position: absolute;
+left:50%;
+transform: translateX(-50%);
+padding: 1.5%;
+font-size: 18px;
+}
